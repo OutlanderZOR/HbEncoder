@@ -1,0 +1,32 @@
+﻿<Window x:Class="ClipManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClipManager"
+        mc:Ignorable="d"
+        Title="Manage Clips" Height="286" Width="428" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="200" Width="400"
+                  ItemsSource="{Binding VideoConfig.Clips}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Clip Name" Width="200" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Start At" Width="80" Binding="{Binding StartAt}" />
+                <DataGridTextColumn Header="Stop At" Width="80" Binding="{Binding StopAt}"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="X" Command="{Binding Path=DataContext.RemoveClipCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" 
+                                    CommandParameter="{Binding}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="260,215,0,0" VerticalAlignment="Top" Width="150" Height="30"
+                Command="{Binding SaveCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"/>
+        <Button x:Name="btnDefaultFile" Content="Encode Source" HorizontalAlignment="Left" Margin="105,215,0,0" VerticalAlignment="Top" Width="150" Height="30"
+            Command="{Binding DefaultFileCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"/>
+
+    </Grid>
+</Window>

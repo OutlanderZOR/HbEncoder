@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HbEnconder", "HbEnconder\HbEnconder.csproj", "{A9DBA5A7-F0F5-4C58-B62C-3C11253B0491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipManager", "ClipManager\ClipManager.csproj", "{B3AA290D-CFF3-4F50-937C-8E551E76F846}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{FA43B4DB-4BB7-4B1E-9B70-198B5ECD87F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9DBA5A7-F0F5-4C58-B62C-3C11253B0491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9DBA5A7-F0F5-4C58-B62C-3C11253B0491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9DBA5A7-F0F5-4C58-B62C-3C11253B0491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9DBA5A7-F0F5-4C58-B62C-3C11253B0491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3AA290D-CFF3-4F50-937C-8E551E76F846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3AA290D-CFF3-4F50-937C-8E551E76F846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3AA290D-CFF3-4F50-937C-8E551E76F846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3AA290D-CFF3-4F50-937C-8E551E76F846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA43B4DB-4BB7-4B1E-9B70-198B5ECD87F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA43B4DB-4BB7-4B1E-9B70-198B5ECD87F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA43B4DB-4BB7-4B1E-9B70-198B5ECD87F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA43B4DB-4BB7-4B1E-9B70-198B5ECD87F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

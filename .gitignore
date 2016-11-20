@@ -1,0 +1,19 @@
+/.project
+*.project
+*.suo
+bin/
+obj/
+*.xsd
+*.wsdl
+/ServiceMetadata
+output.config
+/*.userprefs
+
+/HotKeyEntries/*.hk
+/src/ML.Argo.Energy/*.user
+/doc/banestes/~$yout CCA - Assessoria de Cobranca - v5 - 20120307.doc
+/doc/leader/~$Layout Carta Cobranca.xlsx
+/Output-Build.txt
+/*.user
+/src/ML.Athena.Server/*.user
+*.user
