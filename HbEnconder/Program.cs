@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Remoting.Channels;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using Shared.Model;
@@ -15,7 +16,6 @@ namespace HbEnconder
     {
         static void Main(string[] args)
         {
-            args = new[] {@"D:\shadowplay\Final Fantasy XIV  A Realm Reborn"};
             if (args.Length != 1)
                 return;
 
@@ -54,7 +54,7 @@ namespace HbEnconder
 
 
             Console.WriteLine("Concluido.");
-            Console.ReadKey();
+            Thread.Sleep(5000);
         }
 
         private static IEnumerable<VideoConfig> Load(string path)
