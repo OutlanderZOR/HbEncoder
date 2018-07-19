@@ -17,3 +17,8 @@ output.config
 /*.user
 /src/ML.Athena.Server/*.user
 *.user
+/.vs/HbEnconder/DesignTimeBuild/*.dtbcache
+/.vs/HbEnconder/v15/Server/sqlite3/*.lock
+/.vs/HbEnconder/v15/Server/sqlite3/*.ide
+/.vs/HbEnconder/v15/Server/sqlite3/*.ide-shm
+/.vs/HbEnconder/v15/Server/sqlite3/*.ide-wal

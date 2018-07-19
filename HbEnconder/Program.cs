@@ -45,7 +45,7 @@ namespace HbEnconder
                         Console.WriteLine("{0} -> Clip: {1} [PROCESSANDO]", targetFile.Name, clip.Name);
                         Encode(targetFile.FullName, clipFileName,
                             "x264", "Fast", "High", "5.1", "bframes=2:keyint=30", 10000,
-                            "av_acc", 192, "dpl2",
+                            "av_acc", 320, "dpl2",
                             clip.StartAt,
                             clip.StopAt);
                     }
